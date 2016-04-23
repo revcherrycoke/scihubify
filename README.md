@@ -6,4 +6,4 @@ See https://addons.mozilla.org/en-US/firefox/addon/scihubify/ for screenshots an
 ## Installation
 **Stable version:** Install the add-on from https://addons.mozilla.org/en-US/firefox/addon/scihubify/
 
-**From source:** Use Mozillas [jpm](https://developer.mozilla.org/en-US/Add-ons/SDK/Tools/jpm#Installation) tool to build an XPI with `jpm xpi`. Note that this XPI will be unsigned, with newer versions of Firefox you will have to disable the signature check for add-ons by setting `xpinstall.signatures.required` to `false` (in `about://config`).
+**From source:** Use Mozilla's [jpm](https://developer.mozilla.org/en-US/Add-ons/SDK/Tools/jpm#Installation) tool to build an XPI with `jpm xpi`. Note that this XPI will be unsigned, with newer versions of Firefox you will have to disable the signature check for add-ons by setting `xpinstall.signatures.required` to `false` (in `about://config`).
