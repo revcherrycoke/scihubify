@@ -1,0 +1,16 @@
+{
+  "title": "scihubify",
+  "name": "scihubify",
+  "version": "0.0.1",
+  "description": "Open Links on Sci-Hub, search for selected text on Sci-Hub",
+  "main": "index.js",
+  "author": "Rev. Wicks Cherrycoke",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "jetpack"
+  ]
+}
