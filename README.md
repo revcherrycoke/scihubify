@@ -1,5 +1,5 @@
 # scihubify
-A Firefox extension that provides a toolbar button to open the current page on Sci-Hub, as well as context menu entries for opening links on Sci-Hub and search for selected text (e.g. DOIs, bibliography entries) on Sci-Hub. The latter also works from within the PDF-Viewer.
+A Firefox extension that provides a toolbar button to open the current page on Sci-Hub, as well as context menu entries for opening links on Sci-Hub and search for selected text (e.g. DOIs, bibliography entries) on Sci-Hub. The latter also works from within the PDF-Viewer, making it a very useful research tool (highlight a bibliography entry and jump straight to the referenced paper!).
 
 See https://addons.mozilla.org/en-US/firefox/addon/scihubify/ for screenshots and the latest signed release.
 
