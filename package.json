@@ -1,7 +1,7 @@
 {
   "title": "scihubify",
   "name": "scihubify",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "description": "Open Links on Sci-Hub, search for selected text on Sci-Hub",
   "main": "index.js",
   "author": "Rev. Wicks Cherrycoke",
