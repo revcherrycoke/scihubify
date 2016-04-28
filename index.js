@@ -2,7 +2,7 @@ const {ActionButton} = require("sdk/ui/button/action");
 const {Item, SelectorContext, SelectionContext}  = require("sdk/context-menu");
 const tabs = require("sdk/tabs");
 
-const SCIHUB_URL = 'http://sci-hub.io/';
+const SCIHUB_URL = 'http://sci-hub.bz/';
 const SEARCH_URL = 'http://scholar.google.com.secure.sci-hub.io/scholar?q=';
 
 /* Context menu for opening a given link on sci-hub */
