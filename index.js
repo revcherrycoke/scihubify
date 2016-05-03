@@ -2,12 +2,13 @@ const {ActionButton} = require("sdk/ui/button/action");
 const {Item, SelectorContext, SelectionContext}  = require("sdk/context-menu");
 const tabs = require("sdk/tabs");
 
-const SCIHUB_URL = 'http://sci-hub.bz/';
-const SEARCH_URL = 'http://scholar.google.com.secure.sci-hub.io/scholar?q=';
+const SCIHUB_DOMAIN = require("sdk/simple-prefs").prefs['scihubDomain'];
+const SCIHUB_URL = `https://${SCIHUB_DOMAIN}/`;
+const SEARCH_URL = `http://scholar.google.com.secure.${SCIHUB_DOMAIN}/scholar?q=`;
 
 /* Context menu for opening a given link on sci-hub */
 Item({
-  label: "Open link on Sci-Hub",
+  label: `Open link on ${SCIHUB_DOMAIN}`,
   context: SelectorContext("a[href], button[href]"),
   contentScript: 'self.on("click", function (node) {' +
                  '  self.postMessage(node.href); });',
@@ -18,7 +19,7 @@ Item({
 
 /* Context menu for searching for the selected text on sci-hub */
 Item({
-  label: "Search Sci-Hub for selection",
+  label: `Search ${SCIHUB_DOMAIN} for selection`,
   context: SelectionContext(),
   contentScript: 'self.on("click", function () {' +
                  '  self.postMessage(window.getSelection().toString()); });',
@@ -30,7 +31,7 @@ Item({
 /* Button for opening the current website on sci-hub */
 var button = ActionButton({
   id: "scihub-link",
-  label: "Open page on sci-hub.io",
+  label: `Open page on ${SCIHUB_DOMAIN}`,
   icon: {
     "16": "./icon-16.png",
     "32": "./icon-32.png",

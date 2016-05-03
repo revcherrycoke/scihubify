@@ -1,7 +1,7 @@
 {
   "title": "scihubify",
   "name": "scihubify",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Open Links on Sci-Hub, search for selected text on Sci-Hub",
   "main": "index.js",
   "author": "Rev. Wicks Cherrycoke",
@@ -12,5 +12,21 @@
   "license": "MIT",
   "keywords": [
     "jetpack"
-  ]
+  ],
+  "preferences": [{
+    "name": "scihubDomain",
+    "title": "Sci-Hub Domain",
+    "type": "menulist",
+    "value": "sci-hub.cc",
+    "options": [
+      {"value": "sci-hub.bz",
+       "label": "sci-hub.bz"},
+      {"value": "sci-hub.cc",
+       "label": "sci-hub.cc"},
+      {"value": "sci-hub.io",
+       "label": "sci-hub.io"},
+      {"value": "scihub22266oqcxt.onion",
+       "label": "scihub2226oqcxt.onion (only for Tor users)"}
+    ]
+  }]
 }
