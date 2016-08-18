@@ -18,15 +18,23 @@
     "title": "Sci-Hub Domain",
     "type": "menulist",
     "value": "sci-hub.cc",
-    "options": [
-      {"value": "sci-hub.bz",
-       "label": "sci-hub.bz"},
-      {"value": "sci-hub.cc",
-       "label": "sci-hub.cc"},
-      {"value": "sci-hub.io",
-       "label": "sci-hub.io"},
-      {"value": "scihub22266oqcxt.onion",
-       "label": "scihub2226oqcxt.onion (only for Tor users)"}
-    ]
+    "options": [{
+      "value": "sci-hub.bz",
+      "label": "sci-hub.bz"
+    }, {
+      "value": "sci-hub.cc",
+      "label": "sci-hub.cc"
+    }, {
+      "value": "sci-hub.io",
+      "label": "sci-hub.io"
+    }, {
+      "value": "scihub22266oqcxt.onion",
+      "label": "scihub2226oqcxt.onion (only for Tor users)"
+    }]
+  }, {
+    "name": "scihubSecure",
+    "title": "Use secure connection",
+    "type": "bool",
+    "value": true
   }]
 }

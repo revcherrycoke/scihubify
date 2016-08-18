@@ -3,8 +3,10 @@ const {Item, SelectorContext, SelectionContext}  = require("sdk/context-menu");
 const tabs = require("sdk/tabs");
 
 const SCIHUB_DOMAIN = require("sdk/simple-prefs").prefs['scihubDomain'];
-const SCIHUB_URL = `https://${SCIHUB_DOMAIN}/`;
-const SEARCH_URL = `http://scholar.google.com.secure.${SCIHUB_DOMAIN}/scholar?q=`;
+const SCIHUB_SECURE = require("sdk/simple-prefs").prefs['scihubSecure'];
+const PROTOCOL = (SCIHUB_SECURE ? "https" : "http");
+const SCIHUB_URL = `${PROTOCOL}://${SCIHUB_DOMAIN}/`;
+const SEARCH_URL = `${PROTOCOL}://scholar.google.com.secure.${SCIHUB_DOMAIN}/scholar?q=`;
 
 /* Context menu for opening a given link on sci-hub */
 Item({
