@@ -25,8 +25,14 @@
        "label": "sci-hub.cc"},
       {"value": "sci-hub.io",
        "label": "sci-hub.io"},
+	    {"value": "sci-hub.ac",
+       "label": "sci-hub.ac"},
+	    {"value": "80.82.78.170",
+       "label": "80.82.78.170"},
       {"value": "scihub22266oqcxt.onion",
        "label": "scihub2226oqcxt.onion (only for Tor users)"}
+      {"value": "scihub22266oqcxt.onion.link",
+       "label": "scihub22266oqcxt.onion.link (Hosted on Tor, but sent over clearnet)"}
     ]
   }]
 }
