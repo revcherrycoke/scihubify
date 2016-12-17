@@ -1,7 +1,7 @@
 {
   "title": "scihubify",
   "name": "scihubify",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Open Links on Sci-Hub, search for selected text on Sci-Hub",
   "main": "index.js",
   "author": "Rev. Wicks Cherrycoke",
@@ -17,7 +17,7 @@
     "name": "scihubDomain",
     "title": "Sci-Hub Domain",
     "type": "menulist",
-    "value": "sci-hub.cc",
+    "value": "sci-hub.ac",
     "options": [
       {"value": "sci-hub.bz",
        "label": "sci-hub.bz"},
@@ -31,8 +31,6 @@
        "label": "80.82.78.170"},
       {"value": "scihub22266oqcxt.onion",
        "label": "scihub2226oqcxt.onion (only for Tor users)"}
-      {"value": "scihub22266oqcxt.onion.link",
-       "label": "scihub22266oqcxt.onion.link (Hosted on Tor, but sent over clearnet)"}
     ]
   }]
 }
